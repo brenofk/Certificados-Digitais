@@ -8,7 +8,7 @@
    |   <<-------------------- desafio ---------| ④
    |----- Autentica o desafio --------------->>| ⑤
    |                                           |
-   |             Fim da comunicação             |
+   |             Fim da comunicação            |
 
 
 ### 1️⃣ Gerar o Certificado Raiz (CA)
