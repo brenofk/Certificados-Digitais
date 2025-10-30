@@ -1,2 +1,10 @@
-# Certificados-Digitais
-Adicionar as atividades de certificados digitais do dia 29/10/2025
+Cliente                                      Servidor
+   |                                             |
+   |-------------------- Hello! ---------------->| ①
+   |                                             |
+   |<------------------- Cert_SVR ---------------| ②
+   |                                             |
+   |-- Enc(RSA, Pub_SVR, Nonce) ---------------->| ③
+   |                                             |
+   |<---------------------- Nonce ---------------| ④
+   |                                             |
