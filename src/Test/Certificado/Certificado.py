@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 def gerar_certificado_breno_joao():
     # Caminho da pasta "Arquivos.pem" (dentro de src)
-    arquivos_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Arquivos.pem"))
+    arquivos_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "pem"))
 
     # Garante que a pasta exista
     os.makedirs(arquivos_dir, exist_ok=True)
@@ -72,7 +72,7 @@ def gerar_certificado_breno_joao():
     with open(cert_path, "wb") as f:
         f.write(cert.public_bytes(serialization.Encoding.PEM))
 
-    print("✅ Certificado Breno & João gerado e assinado pela CA com sucesso!")
+    print("✅ Certificado Breno e João gerado e assinado pela CA com sucesso!")
     print(f"- {private_key_path}")
     print(f"- {cert_path}")
 

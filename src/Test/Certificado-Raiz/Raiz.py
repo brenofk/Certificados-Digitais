@@ -7,7 +7,7 @@ import cryptography.x509 as x509
 from datetime import datetime, timedelta
 
 # Caminho da pasta (dentro de src)
-output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Arquivos.pem"))
+output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "pem"))
 
 # Criar a pasta Test, caso não exista
 os.makedirs(output_dir, exist_ok=True)
@@ -68,6 +68,6 @@ certificate = (
 with open(cert_path, "wb") as f:
     f.write(certificate.public_bytes(serialization.Encoding.PEM))
 
-print(" Certificado Raiz e chave privada gerados com sucesso dentro de 'src/Test'")
+print(" Certificado Raiz e chave privada gerados com sucesso!")
 print(f"- {private_key_path}")
 print(f"- {cert_path}")
